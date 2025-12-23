@@ -15,12 +15,12 @@ connectDB();
 // middleware -  parses incoming JSON request bodies and makes the data available on req.body
 app.use(express.json());
 
-// simple custom middleware
-app.use((req, res, next) => {
-    // console.log("We just got a new req");
-    console.log(`Req method is ${req.method} & Req URL is ${req.url}`);
-    next();
-});
+// // simple custom middleware
+// app.use((req, res, next) => {
+//     // console.log("We just got a new req");
+//     console.log(`Req method is ${req.method} & Req URL is ${req.url}`);
+//     next();
+// });
 
 app.use("/api/notes", notesRoutes);
 
