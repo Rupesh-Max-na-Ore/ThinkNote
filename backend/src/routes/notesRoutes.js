@@ -1,5 +1,5 @@
 import express from "express"
-import { createNote, deleteNote, getAllNotes, updateNote } from "../controllers/notesController";
+import { createNote, deleteNote, getAllNotes, updateNote } from "../controllers/notesController.js";
 const router = express.Router();
 
 // Endpoint codes (routes)
